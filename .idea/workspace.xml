@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cd1c34-fb9f-46d4-804e-fba2ebba0a0b" name="Changes" comment="chore: changed group and artifact names">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/Enums/BookingStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Guest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/ports/GuestRepository.java" afterDir="false" />
+    <list default="true" id="19cd1c34-fb9f-46d4-804e-fba2ebba0a0b" name="Changes" comment="feat: entities created">
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/enums/BookingAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/test/java/hotel_booking/booking_service/core/domain/entities/BookingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/Enums/BookingStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/enums/BookingStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Booking.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,31 +21,128 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="33AdbOizGaZ7xRvZtBMs8wDd6A7" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BookingTest$GivenCanceledStatus.executor": "Run",
+    "JUnit.BookingTest$GivenCreatedStatus.executor": "Run",
+    "JUnit.BookingTest$GivenFinishedStatus.executor": "Run",
+    "JUnit.BookingTest$GivenPaidStatus.executor": "Run",
+    "JUnit.BookingTest$GivenPaidStatus.givenCreated_whenInvalidAction_thenStatusRemainsCreated.executor": "Run",
+    "JUnit.BookingTest$GivenPaidStatus.givenPaid_whenInvalidAction_thenStatusRemainsPaid.executor": "Run",
+    "JUnit.BookingTest$GivenRefundedStatus.executor": "Run",
+    "JUnit.BookingTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mmarinho/Desktop/Pessoal/hotel-booking-hexagonal-arch"
+    "last_opened_file_path": "C:/Users/mmarinho/Desktop/Pessoal/hotel-booking-hexagonal-arch",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.BookingTest">
+    <configuration name="BookingTest$GivenCanceledStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="booking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hotel_booking.booking_service.core.domain.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest" />
+      <option name="MAIN_CLASS_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest$GivenCanceledStatus" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTest$GivenPaidStatus.givenCreated_whenInvalidAction_thenStatusRemainsCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="booking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hotel_booking.booking_service.core.domain.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest" />
+      <option name="MAIN_CLASS_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest$GivenPaidStatus" />
+      <option name="METHOD_NAME" value="givenCreated_whenInvalidAction_thenStatusRemainsCreated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTest$GivenPaidStatus.givenPaid_whenInvalidAction_thenStatusRemainsPaid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="booking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hotel_booking.booking_service.core.domain.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest" />
+      <option name="MAIN_CLASS_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest$GivenPaidStatus" />
+      <option name="METHOD_NAME" value="givenPaid_whenInvalidAction_thenStatusRemainsPaid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTest$GivenRefundedStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="booking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hotel_booking.booking_service.core.domain.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest" />
+      <option name="MAIN_CLASS_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest$GivenRefundedStatus" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="booking-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hotel_booking.booking_service.core.domain.entities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hotel_booking.booking_service.core.domain.entities" />
+      <option name="MAIN_CLASS_NAME" value="hotel_booking.booking_service.core.domain.entities.BookingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookingTest" />
+        <item itemvalue="JUnit.BookingTest$GivenPaidStatus.givenPaid_whenInvalidAction_thenStatusRemainsPaid" />
+        <item itemvalue="JUnit.BookingTest$GivenPaidStatus.givenCreated_whenInvalidAction_thenStatusRemainsCreated" />
+        <item itemvalue="JUnit.BookingTest$GivenCanceledStatus" />
+        <item itemvalue="JUnit.BookingTest$GivenRefundedStatus" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,11 +160,20 @@
       <option name="project" value="LOCAL" />
       <updated>1758764151478</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: entities created">
+      <option name="closed" value="true" />
+      <created>1758768215359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758768215359</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: changed group and artifact names" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: changed group and artifact names" />
+    <MESSAGE value="feat: entities created" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: entities created" />
   </component>
 </project>
