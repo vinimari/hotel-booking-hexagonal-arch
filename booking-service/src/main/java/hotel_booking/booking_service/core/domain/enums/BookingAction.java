@@ -4,6 +4,6 @@ public enum BookingAction {
     PAY,      // after created
     FINISH,   // after paid and used
     CANCEL,   // can never be paid
-    REFUND,  // paid then refound
+    REFUND,   // paid then refound
     REOPEN    // after canceled
 }

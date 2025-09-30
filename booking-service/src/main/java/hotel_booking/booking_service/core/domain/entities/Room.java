@@ -16,15 +16,12 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private Integer number;
-    private Integer level;
     private Boolean isInMaintenance;
 
     public Boolean isAvailable() {
         return !this.isInMaintenance && !this.hasGuest();
     }
-
     public Boolean hasGuest() {
         return true;
     }

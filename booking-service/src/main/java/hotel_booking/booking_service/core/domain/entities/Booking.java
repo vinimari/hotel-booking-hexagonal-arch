@@ -16,11 +16,9 @@ public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private LocalDateTime placeAt;
     private LocalDateTime start;
     private LocalDateTime end;
-
     @Enumerated(EnumType.STRING)
     private BookingStatus status = BookingStatus.CREATED;
 
