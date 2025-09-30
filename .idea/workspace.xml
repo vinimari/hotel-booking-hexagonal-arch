@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19cd1c34-fb9f-46d4-804e-fba2ebba0a0b" name="Changes" comment="feat: entities created">
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/enums/BookingAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/test/java/hotel_booking/booking_service/core/domain/entities/BookingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="19cd1c34-fb9f-46d4-804e-fba2ebba0a0b" name="Changes" comment="feat: state machine added">
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/infrastructure/db/jpa/GuestJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/Enums/BookingStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/enums/BookingStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/entities/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/ports/GuestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/hotel_booking/booking_service/core/domain/ports/GuestRepositoryPort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +17,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -168,12 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1758768215359</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: state machine added">
+      <option name="closed" value="true" />
+      <created>1758981760877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1758981760877</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: changed group and artifact names" />
     <MESSAGE value="feat: entities created" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: entities created" />
+    <MESSAGE value="feat: state machine added" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: state machine added" />
   </component>
 </project>
