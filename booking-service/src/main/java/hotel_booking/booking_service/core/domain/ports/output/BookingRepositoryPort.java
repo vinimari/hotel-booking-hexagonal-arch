@@ -1,4 +1,4 @@
-package hotel_booking.booking_service.core.domain.ports;
+package hotel_booking.booking_service.core.domain.ports.output;
 
 import hotel_booking.booking_service.core.domain.entities.Booking;
 import org.springframework.stereotype.Repository;

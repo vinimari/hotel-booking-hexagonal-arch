@@ -1,7 +1,7 @@
 package hotel_booking.booking_service.infrastructure.db.adapter;
 
 import hotel_booking.booking_service.core.domain.entities.Guest;
-import hotel_booking.booking_service.core.domain.ports.GuestRepositoryPort;
+import hotel_booking.booking_service.core.domain.ports.output.GuestRepositoryPort;
 import hotel_booking.booking_service.infrastructure.db.jpa.GuestJpaRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;

@@ -1,5 +1,6 @@
 package hotel_booking.booking_service.core.domain.entities;
 
+import hotel_booking.booking_service.core.domain.valueobject.Money;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,8 +17,9 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Integer number;
+    private Integer roomNumber;
     private Boolean isInMaintenance;
+    private Money price;
 
     public Boolean isAvailable() {
         return !this.isInMaintenance && !this.hasGuest();

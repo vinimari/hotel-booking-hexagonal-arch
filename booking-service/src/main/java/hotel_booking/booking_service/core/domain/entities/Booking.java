@@ -2,6 +2,7 @@ package hotel_booking.booking_service.core.domain.entities;
 
 import hotel_booking.booking_service.core.domain.enums.BookingAction;
 import hotel_booking.booking_service.core.domain.enums.BookingStatus;
+import hotel_booking.booking_service.core.domain.valueobject.ReservationPeriod;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,9 +17,8 @@ public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDateTime placeAt;
-    private LocalDateTime start;
-    private LocalDateTime end;
+    @Embedded
+    private ReservationPeriod reservationPeriod;
     @Enumerated(EnumType.STRING)
     private BookingStatus status = BookingStatus.CREATED;
 
